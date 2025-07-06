@@ -1,2 +1,2 @@
 # JavaScript
-JavaScript code with SIr HItesh Choudhary
+JavaScript code with Sir HItesh Choudhary
