@@ -1,2 +1,2 @@
 # JavaScript
-JavaScript code with Sharada Khapra
+A code for making To-Do-List App
