@@ -1,0 +1,124 @@
+/* General styling */
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3c);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+/* Main container */
+.task-manager {
+  background: #2c2c3c;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  padding: 25px 30px;
+  width: 500px;
+  max-width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.task-manager:hover {
+  transform: scale(1.01);
+}
+
+/* Title */
+.task-manager h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffb703;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
+}
+
+/* Input box */
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.task-input input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  text-align: center;
+  background: #3d3d50;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.task-input input:focus {
+  border-color: #ffb703;
+  box-shadow: 0 0 8px rgba(255, 183, 3, 0.4);
+}
+
+.task-input input::placeholder {
+  color: #bbb;
+}
+
+/* Task list */
+.task-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto; /* scroll if too many tasks */
+  padding-right: 5px;
+}
+
+/* Scrollbar style */
+.task-list::-webkit-scrollbar {
+  width: 8px;
+}
+.task-list::-webkit-scrollbar-thumb {
+  background: #ffb703;
+  border-radius: 4px;
+}
+
+/* Single task */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #44445a;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  background: #55556d;
+}
+
+/* Task text */
+.task div {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+/* Delete button */
+.task button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.task button:hover {
+  background: #ff4d4d;
+  transform: scale(1.05);
+}
